@@ -1,0 +1,135 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* Gradient xanh lá nhạt */
+}
+
+/* Header */
+.header {
+    background: #388e3c; /* Gradient header xanh lá */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.header h1 {
+    margin-left: 10px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu .dropdown {
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu .dropdown a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+    gap: 8px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #81c784, #66bb6a); /* Gradient nút menu */
+}
+
+.menu .dropdown a:hover {
+    background: linear-gradient(45deg, #66bb6a, #388e3c); /* Gradient khi hover */
+    color: white; 
+    border-radius: 5px; 
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9; 
+    color: black;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu .dropdown-content a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+    gap: 8px; 
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu .dropdown-content a:hover {
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.language-switcher {
+    position: fixed; /* Để cố định vị trí */
+    bottom: 20px; /* Khoảng cách từ đáy màn hình */
+    right: 20px; /* Khoảng cách từ cạnh phải */
+    z-index: 1000; /* Hiển thị phía trên các thành phần khác */
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    background-color: #e8f5e9; /* Màu nền xanh lá nhạt */
+    border: 2px solid #81c784; /* Đường viền xanh lá nhạt */
+    border-radius: 10px; /* Góc bo tròn */
+    padding: 10px; /* Khoảng cách nội dung bên trong */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+
+/* language */
+.language-switcher button {
+    font-size: 16px;
+    color: #fff; /* Màu chữ */
+    background: linear-gradient(45deg, #66bb6a, #388e3c); /* Hiệu ứng gradient xanh lá cây */
+    border: none; /* Bỏ đường viền */
+    border-radius: 5px; /* Bo tròn góc nút */
+    padding: 10px 15px; /* Kích thước nút */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng hover */
+}
+
+.language-switcher button:hover {
+    background: linear-gradient(45deg, #388e3c, #66bb6a); /* Đổi hướng gradient khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+.language-switcher button:focus {
+    outline: none; /* Xóa viền focus */
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5); /* Hiệu ứng focus */
+}

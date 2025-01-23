@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Student Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://s.net.vn/SYQT" type="image/x-icon" sizes="64x64">
+</head>
+
+<body>
+
+    <!-- Các phần menu dropdown -->
+    <div class="header">
+        <img src="./images/icon-profile/LogoCaNhan.png" alt="Profile">
+        <div class="menu">
+            <div class="dropdown">
+                <!-- Notifications -->
+                <i class="fas fa-bell"></i> Thông báo
+                <div class="dropdown-content">
+                    <a href="./pages/exam-notifications.html" data-translate="exam_notifications">
+                        <i class="fas fa-bullhorn"></i> Thông báo
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-calendar-check"></i> Thời khóa biểu
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-search"></i> Tra cứu TKB
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-calendar-alt"></i> Lịch thi học phần
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-file-alt"></i> Cấp giấy tờ
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-file-contract"></i> Văn bản biểu mẫu
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-home"></i> Trang chính
+                    </a>
+                    <a href="./pages/study-schedule.html" data-translate="study_schedule">
+                        <i class="fas fa-qrcode"></i> Quét QR code điểm danh
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <!-- Feedback -->
+                <i class="fas fa-comments"></i> Đánh giá
+                <div class="dropdown-content">
+                    <a href="./pages/feedback.html" data-translate="course_feedback">
+                        <i class="fas fa-edit"></i> Đăng ký thi
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <!-- Class Info -->
+                <i class="fas fa-chalkboard"></i> Thông tin lớp
+                <div class="dropdown-content">
+                    <a href="./pages/class-list.html" data-translate="class_list">
+                        <i class="fas fa-question-circle"></i> Diễn đàn hỏi đáp
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-users-cog"></i> Sinh hoạt lớp
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-user-check"></i> Tự đánh giá rèn luyện
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-house-user"></i> Thông tin ngoại trú
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-lightbulb"></i> Góp ý cho nhà trường
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-poll"></i> Trả lời khảo sát
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-book-reader"></i> Thư viện điện tử
+                    </a>
+                    <a href="./pages/contacts.html" data-translate="teacher_info">
+                        <i class="fas fa-graduation-cap"></i> Chương trình đào tạo
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <!-- Student Corner -->
+                <i class="fas fa-user-graduate"></i> Góc sinh viên
+                <div class="dropdown-content">
+                    <a href="./pages/support.html" data-translate="clubs">
+                        <i class="fas fa-book"></i> Sổ tay sinh viên
+                    </a>
+                    <a href="./pages/support.html" data-translate="support">
+                        <i class="fas fa-id-card"></i> Thông tin cá nhân
+                    </a>
+                    <a href="./pages/support.html" data-translate="support">
+                        <i class="fas fa-chart-line"></i> Kết quả học tập
+                    </a>
+                    <a href="./pages/support.html" data-translate="support">
+                        <i class="fas fa-dollar-sign"></i> Học phí
+                    </a>
+                    <a href="./pages/support.html" data-translate="support">
+                        <i class="fas fa-sync-alt"></i> Đăng ký học lại
+                    </a>
+                    <a href="./pages/support.html" data-translate="support">
+                        <i class="fas fa-briefcase"></i> Portfolio
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <!-- System -->
+                <i class="fas fa-tools"></i> Hệ thống
+                <div class="dropdown-content">
+                    <a href="./pages/settings.html" data-translate="settings">
+                        <i class="fas fa-sign-out-alt"></i> Đăng Xuất
+                    </a>
+                    <a href="./pages/settings.html" data-translate="help">
+                        <i class="fas fa-sign-in-alt"></i> Đăng Nhập
+                    </a>
+                    <a href="./pages/settings.html" data-translate="help">
+                        <i class="fas fa-key"></i> Đổi password
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="language-switcher">
+        <button id="btn-vn" data-translate="btn_vn">Tiếng Việt</button>
+        <button id="btn-en" data-translate="btn_en">English</button>
+    </div>
+    </div>
+
+    <!-- Thông tin sidebar bên trái -->
+    <div class="container">
+        <div class="left-sidebar">
+            <h4 data-translate="your_info">Thông tin của bạn</h4>
+            <div class="info personal-info">
+                <h3><i>Ksor Rmah Phi Đen</i></h3>
+                <hr>
+                <p><i class="fa-solid fa-user"></i> <span data-translate="class">ST22B</span></p>
+                <hr>
+                <p><i class="fa-solid fa-city"></i> <span
+                        data-translate="information technology (software technology)">Công nghệ thông tin (Công nghệ
+                        phần
+                        mềm)</span></p>
+                <hr>
+                <p><i class="fa-solid fa-phone"></i> <span data-translate="phone">088.9999.422</span></p>
+                <hr>
+                <p><i class="fa-solid fa-graduation-cap"></i> <span data-translate="education">Đại học chính quy</span>
+                </p>
+                <hr>
+                <p><i class="fa-solid fa-envelope"></i> <span data-translate="email">den101472@donga.edu.vn</span></p>
+            </div>
+
+            <!-- Thông tin cố vấn học tập -->
+            <div class="info advisor-info">
+                <strong data-translate="advisor_info">Thông tin cố vấn học tập!</strong>
+                <h3><i>Ngô Trường An</i></h3>
+                <!-- Hình ảnh QR được bọc trong div -->
+                <div class="qr-container">
+                    <img src="./images/icon-profile/QrThay.png" alt="QR Code" class="qr-image">
+                </div>
+                <hr>
+                <p><i class="fa-solid fa-user"></i> <span data-translate="advisor_gender_value">Nam</span></p>
+                <hr>
+                <p><i class="fa-solid fa-phone"></i> <span data-translate="advisor_phone_value">0368021349</span></p>
+                <hr>
+                <p><i class="fa-solid fa-envelope"></i> <span
+                        data-translate="advisor_email_value">annt@donga.edu.vn</span></p>
+            </div>
+
+
+            <!-- QR Code -->
+            <div class="qr">
+                <img src="./images/icon-profile/QRandroai.png" alt="QR Android">
+                <img src="./images/icon-profile/QRIos.png" alt="QR iOS">
+            </div>
+            <p class="downloadQR"><a href="#" data-translate="download_app">Tải ứng dụng trên Android và iOS</a></p>
+        </div>
+
+        <!-- Nội dung chính của trang -->
+        <div class="main-content">
+            <div class="profile">
+                <img src="./images/icon-profile/LogoCaNhan.png" alt="Đại Học Đông Á">
+                <h1>Ksor Rmah Phi Đen</h1>
+                <p data-translate="class_label">Lớp: <span data-translate="class">ST22B</span></p>
+                <p>ID : 101472</p>
+            </div>
+            <div class="grid">
+                <!-- 20 Icon Cards -->
+                <div class="card">
+                    <i class="fas fa-info-circle"></i>
+                    <p data-translate="profile"><a href="./pages/profile.html">Thông tin cá nhân</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p data-translate="timetable"><a href="./pages/timetable.html">Thời khóa biểu</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <p data-translate="exam"><a href="./pages/exam-notifications.html">Kỳ học</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bell"></i>
+                    <p data-translate="announcements"><a href="./pages/exam-notifications.html">Thông báo</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-file-alt"></i>
+                    <p data-translate="survey"><a href="./pages/survey.html">Khảo sát</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-money-check"></i>
+                    <p data-translate="tuition"><a href="./pages/tuition.html">Học phí</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-life-ring"></i>
+                    <p data-translate="support"><a href="./pages/support.html">Hỗ trợ</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop"></i>
+                    <p data-translate="elearning"><a href="./pages/e-learning.html">E-learning</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p data-translate="scholarships"><a href="./pages/scholarships.html">Học bổng</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clipboard"></i>
+                    <p data-translate="assignments"><a href="./pages/assignments.html">Bài tập</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <p data-translate="statistics"><a href="./pages/statistics.html">Thống kê</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-envelope"></i>
+                    <p data-translate="library"><a href="./pages/library.html">Thư viện</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-address-book"></i>
+                    <p data-translate="contacts"><a href="./pages/contacts.html">Liên hệ</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <p data-translate="classList"><a href="./pages/class-list.html">Danh sách lớp</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clock"></i>
+                    <p data-translate="studySchedule"><a href="./pages/study-schedule.html">Lịch học</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs"></i>
+                    <p data-translate="settings"><a href="./pages/settings.html">Cài đặt</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-question-circle"></i>
+                    <p data-translate="faq"><a href="./pages/faq.html">Hỏi đáp</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-folder"></i>
+                    <p data-translate="materials"><a href="./pages/materials.html">Tài liệu</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-play"></i>
+                    <p data-translate="video"><a href="./pages/video.html">Video học tập</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-star"></i>
+                    <p data-translate="feedback"><a href="./pages/feedback.html">Đánh giá</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thông báo -->
+        <div class="right-sidebar">
+            <p class="sizebig" data-translate="announcements">Thông báo</p>
+            <ul class="announcement">
+                <p data-translate="Notice about the exit standard exam">
+                    <a href="./pages/exam-notifications.html">Thông báo về kỳ thi chuẩn đầu ra</a>
+                </p>
+                <hr>
+                <p data-translate="Tet holiday schedule">
+                    <a href="./pages/exam-notifications.html">Lịch nghỉ Tết Nguyên Đán</a>
+                </p>
+                <hr>
+                <p data-translate="Tuition for semester 2">
+                    <a href="./pages/tuition.html">Học phí kỳ 2</a>
+                </p>
+                <hr>
+                <p data-translate="Scholarship announcement">
+                    <a href="./pages/scholarships.html">Thông báo xét học bổng</a>
+                </p>
+            </ul>
+            <ul class="announcement">
+                <p data-translate="Updated regulations on credit-based training">
+                    <a href="./pages/exam-notifications.html">Cập nhật quy định về đào tạo tín chỉ</a>
+                </p>
+                <hr>
+                <p data-translate="TOEIC mock test schedule for this month">
+                    <a href="./pages/exam-notifications.html">Lịch thi thử TOEIC tháng này</a>
+                </p>
+                <hr>
+                <p data-translate="Extension for tuition payment deadline semester II">
+                    <a href="./pages/tuition.html">Gia hạn thời gian đóng học phí kỳ II</a>
+                </p>
+                <hr>
+                <p data-translate="Online course registration">
+                    <a href="./pages/scholarships.html">Đăng ký môn học trực tuyến</a>
+                </p>
+                <hr>
+                <p data-translate="Seminar on scholarship opportunities in Japan">
+                    <a href="./pages/scholarships.html">Hội thảo về cơ hội học bổng tại Nhật Bản</a>
+                </p>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 <a href="#">Your University</a> | Liên hệ: <a href="E-mail: vanthu@donga.edu.vn">E-mail:
+                vanthu@donga.edu.vn</a> | SĐT: <a href="tel:02363519929">02363519929</a> | Địa chỉ: <a href="#">ĐC: 33
+                Xô Viết Nghệ Tĩnh - Q. Hải Châu - TP. Đà Nẵng</a></p>
+    </div>
+
+</body>
+<!-- Liên kết JavaScript trong trang profile.html -->
+<script src="./assets/lang/lang.js"></script>
+
+</html>
